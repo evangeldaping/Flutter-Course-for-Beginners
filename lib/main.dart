@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
             height: double.infinity,
             width: double.infinity,
             color: Colors.yellow,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   height: 100,
