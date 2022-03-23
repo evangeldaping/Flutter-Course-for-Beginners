@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-            child: Image.network(
-              "https://pbs.twimg.com/profile_images/1243593573909618689/B8JSVJmM_400x400.jpg",
+            child: Image.asset(
+              "images/evangel.jpg",
               height: 100,
               width: 100,
             ),
