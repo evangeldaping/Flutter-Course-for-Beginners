@@ -12,27 +12,40 @@ class MyApp extends StatefulWidget {
 }
 
 class _State extends State<MyApp> {
-  var count = 0;
+  var isBulbOn = false;
+  var isOn = false;
+
+  _builBulbImage() {
+    if (isBulbOn)
+      return Image.asset("images/bulb_on.png");
+    else
+      return Image.asset("images/bulb_off.png");
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+            backgroundColor: Colors.black,
             body: Container(
                 width: double.infinity,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text("$count"),
+                    // _builBulbImage(),
+
+                    isBulbOn
+                        ? Image.asset("images/bulb_on.png")
+                        : Image.asset("images/bulb_off.png"),
                     TextButton(
                       onPressed: () {
                         setState(() {
-                          count = count + 1;
+                          isBulbOn = !isBulbOn;
+                          isOn = !isOn;
                         });
-                        print(count);
                       },
-                      child: Text("Add"),
+                      child: isOn ? Text("Turn Off") : Text("Turn On"),
                     )
                   ],
                 ))));
