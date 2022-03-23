@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
               child: Container(
                   color: Colors.green,
                   height: 300,
-                  width: 300,
-                  child: Column(
+                  width: double.infinity,
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -29,12 +29,12 @@ class MyApp extends StatelessWidget {
                         backgroundImage: AssetImage("images/evangel.jpg"),
                       ),
                       Container(
-                        height: 20,
+                        width: 20,
                       ), // use for spacing
                       Text("AppMaking"),
                       Text("Learn flutter"),
                       SizedBox(
-                        height: 40,
+                        width: 40,
                       ), // use for spacing
                       ElevatedButton(onPressed: () {}, child: Text("Contact"))
                     ],
