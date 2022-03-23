@@ -9,25 +9,33 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.green[800],
         appBar: AppBar(
           backgroundColor: Colors.indigo,
           title: Text("App Name"),
         ),
         body: Container(
-          child: Container(
-              height: 200,
-              width: 200,
-              child: ElevatedButton(
-                child: Text(
-                  "Press me",
-                  style: TextStyle(fontSize: 40),
+            height: double.infinity,
+            width: double.infinity,
+            color: Colors.yellow,
+            child: Column(
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.red,
                 ),
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                    primary: Colors.orange, elevation: 0),
-              )),
-        ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.green,
+                ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.blue,
+                ),
+              ],
+            )),
       ),
     );
   }
