@@ -16,10 +16,9 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-            child: Image.asset(
-              "images/evangel.jpg",
-              height: 100,
-              width: 100,
+            child: CircleAvatar(
+              backgroundImage: AssetImage("images/evangel.jpg"),
+              radius: 80,
             ),
           ),
         ),
