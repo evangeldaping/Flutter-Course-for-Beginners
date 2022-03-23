@@ -9,16 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.yellow,
-        body: Center(
-          child: Text(
-            "Hello World!",
-            style: TextStyle(
-              fontSize: 30,
-              color: Colors.white,
-            ),
-          ),
-        ),
+        backgroundColor: Colors.green[800],
       ),
     );
   }
