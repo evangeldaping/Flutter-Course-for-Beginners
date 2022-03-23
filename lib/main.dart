@@ -17,34 +17,14 @@ class MyApp extends StatelessWidget {
             height: double.infinity,
             width: double.infinity,
             color: Colors.yellow,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.pink,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
+                Icon(Icons.android),
+                TextButton(
+                  child: Text("Press Me"),
+                  onPressed: () {},
                 ),
               ],
             )),
