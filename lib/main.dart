@@ -9,20 +9,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: Colors.green[800],
-          appBar: AppBar(
-            backgroundColor: Colors.indigo,
-            title: Text("App Name"),
-          ),
-          body: Container(
-              // padding: EdgeInsets.only(top: 20, left: 14),
-              margin: EdgeInsets.all(12.0),
+        backgroundColor: Colors.green[800],
+        appBar: AppBar(
+          backgroundColor: Colors.indigo,
+          title: Text("App Name"),
+        ),
+        body: Container(
+          child: Center(
+            child: Image.network(
+              "https://pbs.twimg.com/profile_images/1243593573909618689/B8JSVJmM_400x400.jpg",
               height: 100,
-              width: 200,
-              color: Colors.red,
-              child: Center(
-                child: Text("Hello"),
-              ))),
+              width: 100,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
