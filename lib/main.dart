@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-              child: Icon(Icons.access_alarm, color: Colors.red, size: 80)),
+              child: ElevatedButton(
+            child: Text("Press me"),
+            onPressed: () {},
+          )),
         ),
       ),
     );
