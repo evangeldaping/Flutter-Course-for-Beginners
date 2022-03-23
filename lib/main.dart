@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-              child: ElevatedButton(
+              child: TextButton(
             child: Text("Press me"),
             onPressed: () {},
           )),
