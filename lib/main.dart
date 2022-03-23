@@ -15,12 +15,14 @@ class MyApp extends StatelessWidget {
             title: Text("App Name"),
           ),
           body: Container(
-              padding: EdgeInsets.all(8.0),
+              // padding: EdgeInsets.only(top: 20, left: 14),
               margin: EdgeInsets.all(12.0),
               height: 100,
               width: 200,
               color: Colors.red,
-              child: Text("Hello"))),
+              child: Center(
+                child: Text("Hello"),
+              ))),
     );
   }
 }
