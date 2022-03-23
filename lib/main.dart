@@ -16,11 +16,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-            child: CircleAvatar(
-              backgroundImage: AssetImage("images/evangel.jpg"),
-              radius: 80,
-            ),
-          ),
+              child: Icon(Icons.access_alarm, color: Colors.red, size: 80)),
         ),
       ),
     );
