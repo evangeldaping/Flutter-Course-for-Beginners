@@ -16,17 +16,29 @@ class MyApp extends StatelessWidget {
         body: Container(
             height: double.infinity,
             width: double.infinity,
-            color: Colors.yellow,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Icon(Icons.android),
-                TextButton(
-                  child: Text("Press Me"),
-                  onPressed: () {},
-                ),
-              ],
+            child: Center(
+              child: Container(
+                  color: Colors.green,
+                  height: 300,
+                  width: 300,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        backgroundImage: AssetImage("images/evangel.jpg"),
+                      ),
+                      Container(
+                        height: 20,
+                      ), // use for spacing
+                      Text("AppMaking"),
+                      Text("Learn flutter"),
+                      SizedBox(
+                        height: 40,
+                      ), // use for spacing
+                      ElevatedButton(onPressed: () {}, child: Text("Contact"))
+                    ],
+                  )),
             )),
       ),
     );
