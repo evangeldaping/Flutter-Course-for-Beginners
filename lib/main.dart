@@ -15,11 +15,18 @@ class MyApp extends StatelessWidget {
           title: Text("App Name"),
         ),
         body: Container(
-          child: Center(
-              child: TextButton(
-            child: Text("Press me"),
-            onPressed: () {},
-          )),
+          child: Container(
+              height: 200,
+              width: 200,
+              child: ElevatedButton(
+                child: Text(
+                  "Press me",
+                  style: TextStyle(fontSize: 40),
+                ),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.orange, elevation: 0),
+              )),
         ),
       ),
     );
